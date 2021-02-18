@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToSpeech">
+
+    <EditText
+        android:id="@+id/write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="type in your text...."
+        android:background="@android:drawable/edit_text"
+        android:paddingLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:clickable="true" />
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/tap_to_speak"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="450dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/help"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/choicebgcolor"
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="1dp"
+            android:clickable="true"
+            android:text="HELP"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
+            android:drawableTop="@drawable/iconhelp"
+            android:paddingTop="10dp"
+
+
+            />
+
+        <Button
+            android:id="@+id/speak"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/choicebgcolor"
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="8dp"
+            android:paddingTop="10dp"
+            android:text="SPEAK"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
+            android:drawableTop="@drawable/spicon"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/listen"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/choicebgcolor"
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="8dp"
+            android:paddingTop="10dp"
+            android:text="LISTEN"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
+            android:drawableTop="@drawable/iconpod"
+            android:clickable="true"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

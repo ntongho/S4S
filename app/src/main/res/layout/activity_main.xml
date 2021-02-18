@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtSpeechInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@android:color/black"
+        android:textSize="26dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tap_to_speak"
+        android:layout_width="182dp"
+        android:layout_height="183dp"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/btnspeakicon"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/tap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAP TO LISTEN"
+        android:layout_below="@+id/tap_to_speak"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/tap"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="450dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/choicebgcolor"
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="1dp"
+            android:clickable="true"
+            android:text="Save"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
+            android:drawableTop="@drawable/saveicon"
+            android:paddingTop="10dp"
+
+
+            />
+
+        <Button
+            android:id="@+id/help"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/choicebgcolor"
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="8dp"
+            android:paddingTop="10dp"
+            android:text="Help"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
+            android:drawableTop="@drawable/iconhelp"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/speak"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/choicebgcolor"
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="8dp"
+            android:paddingTop="10dp"
+            android:text="Speak"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
+            android:drawableTop="@drawable/spicon"
+            android:clickable="true"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
